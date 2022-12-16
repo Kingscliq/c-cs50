@@ -33,7 +33,7 @@ int main(void)
 
     for (int i = 0; i < strlen(names); i++)
     {
-        if (names[i] == "Margret")
+        if (strcmp(names[i], "Margret") == 0) // Returns 0 if condition is true, we use strcmp to compare two strings in C
         {
             printf("Found!");
             return 0;
