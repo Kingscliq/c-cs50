@@ -1,0 +1,11 @@
+n = number of doors
+middle = n/2
+
+if no doors
+    Return false
+if number is behind doors[middle]
+    Return true
+Else if number < doors[middle]
+    Search doors[0] through doors[middle - 1]
+Else if number > doors[middle]
+    Search doors[middle + 1] through doors[n-1]
