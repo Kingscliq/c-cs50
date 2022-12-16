@@ -1,23 +1,45 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
-    int numbers[] = {3,
-                     5,
-                     2,
-                     8,
-                     7,
-                     4,
-                     0};
-    for (int i = 0; i < sizeof(numbers); i++)
+
+    // Search for a number
+    // int numbers[] = {3,
+    //                  5,
+    //                  2,
+    //                  8,
+    //                  7,
+    //                  4,
+    //                  0};
+
+    // for (int i = 0; i < sizeof(numbers); i++)
+    // {
+    //     if (numbers[i] == 20)
+    //     {
+    //         printf("Found!\n");
+    //         return 0;
+    //     }
+    // }
+
+    // printf("Not Found!\n");
+    // return 1;
+
+    string names[] = {"Billy",
+                      "Esther",
+                      "Moses",
+                      "Daniel",
+                      "Margret"}; // String type works only with the CS50 library
+
+    for (int i = 0; i < strlen(names); i++)
     {
-        if (numbers[i] == 20)
+        if (names[i] == "Margret")
         {
-            printf("Found!\n");
+            printf("Found!");
             return 0;
         }
     }
 
-    printf("Not Found!\n");
+    printf("Not Found!");
     return 1;
 }
