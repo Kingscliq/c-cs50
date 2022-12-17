@@ -10,3 +10,11 @@ BUBBLE SORT
         If numbers[i] and numbers[i+1] out of order
             Swap them
     if no swaps QUIT
+
+MERGE SORT(use Recursion)
+    if one number 
+        QUIT
+    Else
+        Sort left half of numbers
+        Sort right half of numbers
+        Merge both sorted halves together
