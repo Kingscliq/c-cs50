@@ -1,0 +1,11 @@
+SELECTION SORT
+    for i from 0 to n-1
+        find smallest number between numbers[i] and numbers[n-1]
+        swap the smallest number with the numbers[i]
+
+
+BUBBLE SORT
+    Repeat n - 1 times
+        for i from 0 to n-2
+        If numbers[i] and numbers[i+1] out of order
+            Swap them
