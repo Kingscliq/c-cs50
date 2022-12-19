@@ -12,7 +12,7 @@ bool valid_triangle(int a, int b, int c)
     {
         return false;
     }
-
+// give or take
     // the sum of the length of any two triangle must be greater than the length of the third one
     if ((a + b) <= c || (c + b) <= a) || (a + c) <= b)
         {

@@ -11,6 +11,7 @@ BUBBLE SORT
             Swap them
     if no swaps QUIT
 
+
 MERGE SORT(use Recursion)
     if one number 
         QUIT
