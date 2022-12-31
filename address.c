@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
@@ -7,8 +8,9 @@ int main(void)
     // printf("%i\n", n);
     char *name = "string";
     char *s = "HI!";
+    char *t = "HI!";
 
-    int numbers[] = {2, 5, 7, 2, 9, 0}
+    int numbers[] = {2, 5, 7, 2, 9, 0};
 
     // For Pointer arithmetic for strings of Characters
     printf("%c\n", *s);
@@ -20,4 +22,14 @@ int main(void)
     printf("%i\n", *numbers);
     printf("%i\n", *numbers + 1);
     printf("%i\n", *numbers + 2);
+
+    // Comparing two strings
+    if (strcmp(t, s) == 0)
+    {
+        printf("Same\n");
+    }
+    else
+    {
+        printf("Different!\n");
+    }
 }
