@@ -5,7 +5,6 @@
 
 int main(void)
 {
-
     // get the value of from user
     // char *s = "Hi!";
     char *s = "hi!";
