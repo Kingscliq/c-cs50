@@ -15,7 +15,7 @@ int main(void)
 
     // Add a number to List
     node *n = malloc(sizeof(node));
-    if (n != NULL)
+    if (n == NULL)
     {
         return 1;
     }
@@ -23,6 +23,26 @@ int main(void)
     n->number = 1;
     n->next = NULL;
 
-    // Update List with Value of n
+    // Update List with to point to new node
     list = n;
+
+    // Add a number to our linked List
+    n = malloc(sizeof(node);
+
+    if(n == NULL){
+        free(list);
+        return 1
+    }
+
+    n->number = 2;
+    n->next = NULL;
+    list->next = 2;
+
+// Add another number to the list
+    n= malloc(sizeof(node))
+    if(n == NULL){
+        free(list);
+        free(list->next);
+        return 1;
+    }
 }
