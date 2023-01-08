@@ -27,22 +27,33 @@ int main(void)
     list = n;
 
     // Add a number to our linked List
-    n = malloc(sizeof(node);
+    n = malloc(sizeof(node));
 
-    if(n == NULL){
+    if (n == NULL)
+    {
         free(list);
-        return 1
+        return 1;
     }
 
     n->number = 2;
     n->next = NULL;
-    list->next = 2;
+    list->next = n;
 
-// Add another number to the list
-    n= malloc(sizeof(node))
-    if(n == NULL){
-        free(list);
+    // Add another number to the list
+    n = malloc(sizeof(node));
+    if (n == NULL)
+    {
         free(list->next);
+        free(list);
         return 1;
+    }
+    n->number = 3;
+    n->next = NULL;
+    list->next->next = n;
+
+    // Print the numbers to the console
+    for (node *tmp = list; tmp != NULL; tmp = tmp->next)
+    {
+        printf("%i\n", tmp->number);
     }
 }
