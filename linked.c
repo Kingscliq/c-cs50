@@ -56,4 +56,12 @@ int main(void)
     {
         printf("%i\n", tmp->number);
     }
+
+    while (list != NULL)
+    {
+
+        int tmp = list->next;
+        free(list);
+        list = tmp
+    }
 }
